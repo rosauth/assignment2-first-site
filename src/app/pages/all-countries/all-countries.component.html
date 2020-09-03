@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <h3>List of All Countries in Our Database</h3>
+        <div class="centeredDiv">
+            <div class="sidedDiv" *ngFor="let countries of allCountry">
+                <div routerLink="/details/{{countries.id}}">
+                    <h4>{{ countries.name }}</h4>
+                    <p>{{ countries.population }} people</p>
+                    <p>{{ countries.area }} m<sup>2</sup></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

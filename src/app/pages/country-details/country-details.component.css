@@ -32,7 +32,6 @@ button{
 .sidedDiv{
     float: left;
     width: 25%;
-    text-align: center;
-    border: 1px solid;
     margin: 5px;
+    padding: 5px;
 }

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <h3>Three Most Populated Countries</h3>
+        <div class="centeredDiv">
+            <div class="sidedDiv" *ngFor="let country of allCountry">
+                <div routerLink="/details/{{country.id}}">
+                    <h4>{{ country.name }}</h4>
+                    <p>{{ country.population }}</p>
+                    <p>people</p>
+                </div> 
+            </div>
+        </div>
+
+        <hr style="margin-top: 15px; margin-bottom: 15px;">
+
+        <h3>Three Largest Countries (Area)</h3>
+        <div class="centeredDiv">
+            <div class="sidedDiv" *ngFor="let country of largestCountry">
+                <div routerLink="/details/{{country.id}}">
+                    <h4>{{ country.name }}</h4>
+                    <p>{{ country.area }}</p>
+                    <p>m<sup>2</sup></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
